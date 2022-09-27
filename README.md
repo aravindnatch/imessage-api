@@ -4,7 +4,7 @@ A simple imessage api that leverages applescript and a local webserver to send i
 
 ### Notes
 
-Due to limitations imposed by apple, all features are not availble to machines running macOS 10.16 or higher. All macOS versions can send imessages/sms to new or existing conversations.
+Due to limitations imposed by apple, all features are not available to machines running macOS 10.16 or higher. All macOS versions can send imessages/sms to new or existing conversations.
 ### Sending a Message
 ```python
 import requests
@@ -21,8 +21,7 @@ json = {
 req = requests.post('http://127.0.0.1:33229/sendMessage', json=json)
 
 # print the response
-print(req.text)
-# {"macos_version":"10.15","status":"success","time":"2022-09-26 22:24:54"}
+print(req.text) # {"status":"success","time":"2022-09-26 22:24:54"}
 ```
 
 ### Run/Build Locally

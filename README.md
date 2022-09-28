@@ -6,6 +6,7 @@ A simple imessage api that leverages applescript and a local webserver to send i
 
 Due to limitations imposed by apple, all features are not available to machines running macOS 10.16 or higher. All macOS versions can send imessages/sms to new or existing conversations.
 ### Sending a Message
+Run the macOS menubar app then run the following code to send a message
 ```python
 import requests
 

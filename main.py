@@ -26,12 +26,12 @@ messageCountItem = rumps.MenuItem('Messages: ' + str(mcount))
 
 if API_KEY == '':
   try:
-    with open('data/messages.txt') as f:
+    with open('data/apikey.txt') as f:
       lines = f.readlines()
       API_KEY = lines[0].strip()
   except:
     API_KEY = str(uuid.uuid4())
-    with open('data/messages.txt', 'w+') as f:
+    with open('data/apikey.txt', 'w+') as f:
       f.write(API_KEY)
 
 RumpApp = rumps.App(name="imessage-api", icon='assets/icon.png')

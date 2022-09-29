@@ -20,7 +20,7 @@ json = {
 }
 
 # make the request to the local server
-req = requests.post('http://127.0.0.1:33229/sendMessage', json=json)
+req = requests.post('http://localhost:33229/sendMessage', json=json)
 
 # print the response
 print(req.text) # {"status":"success","time":"2022-09-26 22:24:54"}

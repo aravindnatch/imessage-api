@@ -1,7 +1,13 @@
 from setuptools import setup
 
 APP = ['main.py']
-DATA_FILES = ['assets/icon.png', 'applescript/sendMessage.applescript','applescript/legacySendMessage.applescript']
+
+DATA_FILES = [
+    ('', ['assets']),
+    ('', ['applescript']),
+    ('', ['data']),
+]
+
 OPTIONS = {
     'argv_emulation': True,
     'plist': {

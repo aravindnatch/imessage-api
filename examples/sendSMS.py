@@ -2,6 +2,7 @@ import requests
 
 # Set the request parameters
 json = {
+  'apikey': 'YOUR_API_KEY',
   'number': 'XXXXXXXXXX',
   'service': 'SMS',
   'message': 'hello from imessage-api!',
@@ -9,7 +10,7 @@ json = {
 }
 
 # make the request to the local server
-req = requests.post('http://127.0.0.1:33229/sendMessage', json=json)
+req = requests.post('http://localhost:33229/sendMessage', json=json)
 
 # print the response
 print(req.text)
